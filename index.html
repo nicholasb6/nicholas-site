@@ -10,22 +10,28 @@
       font-family: Roboto Mono, monospace;
       padding: 2vw;
       text-align: center;
-      background-color: #001f3f; /* Dark blue background color */
-      color: #cacaca; /* Slightly lighter text color for better contrast */
+      background-color: #001f3f;
+      color: #cacaca;
     }
     h1 {
       text-align: center;
       font-size: 5vw;
     }
+    h2 {
+      font-size: 3vw;
+      margin-bottom: 1vw;
+    }
     img {
-      max-width: 100%;
-      height: 150px; /* Set a fixed height for all images */
+      width: 150px;
+      height: auto;
       display: block;
       margin: 0 auto;
-      margin-bottom: 1vw; /* Add margin between images */
+      margin-bottom: 1vw;
+      cursor: pointer;
     }
     p {
       font-size: 3vw;
+      margin-bottom: 1vw;
     }
 
     @media only screen and (max-width: 768px) {
@@ -35,11 +41,31 @@
       h1 {
         font-size: 7vw;
       }
+      h2 {
+        font-size: 5vw;
+      }
       p {
         font-size: 5vw;
       }
     }
   </style>
+  <script>
+    function showEmail() {
+      alert("WLM 2009: nicholas0@escargot.chat\nYahoo Messenger: nicholas0");
+    }
+
+    function redirectToRoblox() {
+      window.open("https://www.roblox.com/users/184087158/profile", "_blank");
+    }
+
+    function redirectToSteam() {
+      window.open("https://steamcommunity.com/id/SuperMYL/", "_blank");
+    }
+
+    function redirectToDiscord() {
+      window.open("https://discord.com/users/888826089420496967", "_blank");
+    }
+  </script>
   <title>nicholas's site</title>
 </head>
 <body>
@@ -48,14 +74,13 @@
   </div>
   <h1>nicholas's site</h1>
   <p>...i have no idea what to put here </p>
+  <h2>Where you can find me</h2>
 
   <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-    <img src="/images/escargot.jpg" alt="Escargot">
-    <img src="/images/roblox.png" alt="Roblox">
-    <img src="/images/steam.jpg" alt="Steam">
-    <img src="/images/discord.webp" alt="Discord">
+    <img src="/images/escargot.jpg" alt="Escargot" onclick="showEmail()">
+    <img src="/images/roblox.png" alt="Roblox" onclick="redirectToRoblox()">
+    <img src="/images/steam.jpg" alt="Steam" onclick="redirectToSteam()">
+    <img src="/images/discord.webp" alt="Discord" onclick="redirectToDiscord()">
   </div>
 </body>
 </html>
-
-
