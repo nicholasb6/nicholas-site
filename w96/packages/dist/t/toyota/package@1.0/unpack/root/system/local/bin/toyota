@@ -1,0 +1,5 @@
+//!wrt $BSPEC:{"icn":null,"cpr":"Copyright (C) nicholas 2023.","dsc":"toyota.","frn":"toyota.","aut":"nicholas","ver":1,"ssy":"gui"} 
+
+const{register:register}=w96.app,{Theme:Theme}=w96.ui;class toyota extends WApplication{constructor(){super()}async main(t){super.main(t);setInterval((function(){w96.ui.DialogCreator.create({body:"toyota.",title:"toyota.",icon:"info"})}),250)}}
+
+return await WApplication.execAsync(new toyota(), this.boxedEnv.args, this);
