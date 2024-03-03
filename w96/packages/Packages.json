@@ -1,0 +1,20 @@
+[
+    {
+        "name": "toyota.",
+        "friendlyName": "toyota.",
+        "description": "toyota.",
+        "author": "nicholas (https://supermyl.top)",
+        "category": "other",
+        "version": 1.0,
+        "feature_requirements": [],
+		"installedSize": 12000,
+		"downloadSize": 8000,
+        "min_os_version": 300000,
+        "depends": [],
+        "iconFiles": {
+            "32x32": "$REPO_PATH$/dist/t/toyota/icon32.jpg",
+            "16x16": "$REPO_PATH$/dist/t/toyota/icon16.jpg"
+        },
+        "packageRoot": "$REPO_PATH$/dist/t/toyota"
+    }
+]
