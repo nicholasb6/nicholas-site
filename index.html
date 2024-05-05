@@ -15,6 +15,17 @@
   <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/nicholasb6/nicholasb6.github.io/main/images/favicon.ico">
   
   <style>
+        .mastodon-feed {
+      font-size: 2vw; 
+    }
+    .mastodon-feed img {
+      max-width: 100px;
+      height: auto;
+    }
+    .lastfm-img {
+    width: 350px;
+}
+
     body {
       font-family: Lexend, sans-serif;
       padding: 2vw;
@@ -106,15 +117,16 @@
     <div style="text-align: left; width: 70%;">
       <h2>Last.fm</h2>
       <a href="https://www.last.fm/user/SuperMYL">
-        <img src="https://lastfm-recently-played.vercel.app/api?user=SuperMYL" height="auto" width="500px"/>
-      </a>
+        <img class="lastfm-img" src="https://lastfm-recently-played.vercel.app/api?user=SuperMYL" height="auto" width="350px"/>
+    </a>
+    
     </div>
 
     <div style="text-align: right; width: 25%;">
       <h2>Mastodon Feed</h2>
       <a class="mastodon-feed"
       href="https://lethallava.land/@nicholas"
-      data-toot-limit="2"
+      data-toot-limit="4"
       >mastodon</a>
     </div>
   </div>
