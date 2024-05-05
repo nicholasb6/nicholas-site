@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" type="text/css"
+      href="https://esm.sh/emfed@1/toots.css">
   <meta content="nicholas's site" property="og:title">
   <meta content="nicholas's site" property="og:description">
   <meta content="/images/pfp.png" property="og:image">
@@ -101,7 +103,24 @@
   </div>
   
   
-    <br>
-    <a href="/connections/">Connections</a>
+  <div style="text-align: left; margin-top: 2vw;">
+    <h2>last.fm</h2>
+    <a href="https://www.last.fm/user/SuperMYL">
+      <img src="https://lastfm-recently-played.vercel.app/api?user=SuperMYL" height="auto" width="350px"/>
+    </a>
+  </div>
+  
+
+  <div style="text-align: right; margin-top: 2vw;">
+    <h2>mastodon</h2>
+    <a class="mastodon-feed"
+    href="https://lethallava.land/@nicholas"
+    data-toot-limit="4"
+    >mastodon</a>
+  </div>
+  
+  <br>
+  <a href="/connections/">Connections</a>
+  <script type="module" src="https://esm.sh/emfed@1"></script>
 </body>
 </html>
