@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="masotimeline/mastodon-timeline.min.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css"
       href="https://esm.sh/emfed@1/toots.css">
   <meta content="nicholas's site" property="og:title">
@@ -15,11 +16,6 @@
   <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/nicholasb6/nicholasb6.github.io/main/images/favicon.ico">
   
   <style>
-    .mastodon-feed {
-      font-size: 2vw;
-      max-width: 100px;
-      height: auto;
-    }
 
     .lastfm-img {
     width: 350px;
@@ -118,19 +114,29 @@
       <a href="https://www.last.fm/user/SuperMYL">
         <img class="lastfm-img" src="https://lastfm-recently-played.vercel.app/api?user=SuperMYL" height="auto" width="350px"/>
     </a>
-    
+
     </div>
 
     <div style="text-align: right; width: 25%;">
-      <h2>Mastodon Feed</h2>
-      <a class="mastodon-feed"
-      href="https://lethallava.land/@nicholas"
-      data-toot-limit="4"
-      >mastodon</a>
+      <h2>Mastodon</h2>
+      <script src="mastotimeline/mastodon-timeline.umd.js"></script>
+      <div id="mt-container" class="mt-container">
+        <div class="mt-body" role="feed">
+          <div class="mt-loading-spinner"></div>
+        </div>
+      </div>
+<script>
+const myTimeline = new MastodonTimeline.Init({
+  instanceUrl: "https://lethallava.land",
+  timelineType: "profile",
+  userId: "9oowntpgrvlvp768",
+  profileName: "@nicholas"
+});
+</script>      
     </div>
   </div>
   <br>
   <a href="/connections/">Connections</a>
-  <script type="module" src="https://esm.sh/emfed@1"></script>
+
 </body>
 </html>
