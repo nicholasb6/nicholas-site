@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="masotimeline/mastodon-timeline.min.css" rel="stylesheet" />
   <meta content="nicholas's site" property="og:title">
   <meta content="nicholas's site" property="og:description">
   <meta content="/images/pfp.png" property="og:image">
@@ -13,6 +14,10 @@
   <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/nicholasb6/nicholasb6.github.io/main/images/favicon.ico">
   
   <style>
+    .lastfm-img {
+    width: 350px;
+}
+
     body {
       font-family: Lexend, sans-serif;
       padding: 2vw;
@@ -100,8 +105,37 @@
     </a>
   </div>
   
-  
-    <br>
-    <a href="/connections/">Connections</a>
+  <div style="display: flex; justify-content: space-between; margin-top: 2vw;">
+    <div style="text-align: left; width: 10%;">
+      <h2>Last.fm</h2>
+      <a href="https://www.last.fm/user/SuperMYL">
+        <img class="lastfm-img" alt="Last.fm listening history" title="Last.fm" src="https://lastfm-recently-played.vercel.app/api?user=SuperMYL" height="auto" width="350px"/>
+    </a>
+
+    </div>
+
+    <div style="float: right; width: 25%;">
+      <h2>Mastodon</h2>
+      <script src="mastotimeline/mastodon-timeline.umd.js"></script>
+      <div id="mt-container" class="mt-container">
+        <div class="mt-body" role="feed">
+          <div class="mt-loading-spinner"></div>
+        </div>
+      </div>
+<script>
+const myTimeline = new MastodonTimeline.Init({
+  instanceUrl: "https://lethallava.land",
+  timelineType: "profile",
+  userId: "9oowntpgrvlvp768",
+  profileName: "@nicholas",
+  defaultTheme: "dark",
+  btnSeeMore: "see more at lethallava.land"
+});
+</script>      
+    </div>
+  </div>
+  <br>
+  <a href="/connections/">Connections</a>
+
 </body>
 </html>
